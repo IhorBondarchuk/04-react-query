@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
-import type { Movie } from "../../types/movie";
-import {
-  fetchMovies,
-  type MovieHttpResponse,
-} from "../../services/movieService";
+import type { Movie, MovieHttpResponse } from "../../types/movie";
+import { fetchMovies } from "../../services/movieService";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import toast, { Toaster } from "react-hot-toast";
 import css from "./App.module.css";
