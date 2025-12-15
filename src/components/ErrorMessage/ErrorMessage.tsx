@@ -5,5 +5,5 @@ interface ErrorMessageProps {
 }
 
 export default function ErrorMessage({ error }: ErrorMessageProps) {
-  return <p className={css.text}>{error}</p>;
+  return error ? <p className={css.text}>{error}</p> : null;
 }
